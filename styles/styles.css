@@ -28,7 +28,7 @@ p {
 aside {
     width: 20rem;
     margin: 1rem;
-    border: 1px solid rgba(0, 0, 0, 0.2); /* corregido: rgba() para transparencia */
+    border: 1px solid rgba(0, 0, 0, 0.2); /* listo */
     padding: 1rem;
     background-color: #eee;
     color: #333;
