@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS Fundamentals Quiz</title>
+    <link rel="stylesheet" href="styles/quiz.css">
+</head>
+
+<body class="min-h-screen flex items-start justify-center p-6 sm:p-10">
+
+    <div class="w-full max-w-2xl bg-white p-8 sm:p-10 rounded-xl shadow-2xl border border-gray-100">
+        <h1 class="text-4xl font-extrabold text-gray-900 mb-8 text-center border-b pb-4">
+            HTML & CSS Fundamentals Quiz
+        </h1>
+        <form action="/submit-quiz.php" method="POST" class="space-y-8">
+            <div class="form-group">
+                <label for="q1" class="block text-lg font-medium text-gray-700 mb-2">
+                    1. Which HTML tag is used to define an internal stylesheet? (Fill in the blank)
+                </label>
+                <input type="text" id="q1" name="q1" placeholder="Type your answer here..." class="input-field">
+            </div>
+
+            <div class="form-group">
+                <label for="q2" class="block text-lg font-medium text-gray-700 mb-2">
+                    2. Briefly explain the primary purpose of the CSS Box Model. (Short Answer)
+                </label>
+                <textarea id="q2" name="q2" rows="4" placeholder="Your explanation (max 5 lines)..."
+                    class="textarea-field resize-none"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="q3" class="block text-lg font-medium text-gray-700 mb-2">
+                    3. What is the correct HTML element for the largest heading? (Select One)
+                </label>
+                <select id="q3" name="q3" class="select-field">
+                    <option value="" selected disabled>Choose the correct heading level...</option>
+                    <option value="head">q1</option>
+                    <option value="h6">q2</option>
+                    <option value="h1">q3</option>
+                    <option value="heading">q4</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="q4" class="block text-lg font-medium text-gray-700 mb-2">
+                    4. What is the value of the default `z-index` for most HTML elements? (Integer)
+                </label>
+                <input type="number" id="q4" name="q4" placeholder="Enter an integer..." min="0" max="100" step="1"
+                    class="input-field">
+            </div>
+
+            <div class="pt-4">
+                <button type="submit" class="submit-button">
+                    Submit Quiz
+                </button>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Adventure Rapids Rafting</title>
+    <meta name="description"
+        content="Contact Adventure Rapids Rafting to ask questions, request reservations, or send feedback. Find our address, phone, email, map, staff, and contact form.">
+    <meta name="author" content="David Benavides">
+    <link rel="stylesheet" href="styles/contact.css">
+</head>
+
+<body>
+    <header>
+        <img src="https://byui-cse.github.io/wdd130-ww-course/resources/images/logos/z-raftingbw.png"
+            alt="Logotipo de Adventure Rapids Rafting">
+        <div id="logo">Adventure Rapids Rafting</div>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html" class="active">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="contact-grid">
+        <section class="contact-info">
+            <h2>Company Information</h2>
+            <p><strong>Address:</strong> 555 Water St, Youngstown, NY 14174, USA</p>
+            <p><strong>Phone:</strong> +17162464778 | +17451525824</p>
+            <p><strong>Email:</strong> <a href="mailto:reserv@adventurerapids.com">reserv@adventurerapids.com</a>
+            </p>
+
+            <h3>Find Us</h3>
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.982426078621!2d-79.0535528845005!3d43.247848879132864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d35de2717aaaab%3A0x3df0e01f300b295c!2sNiagara%20Outfitters!5e0!3m2!1ses!2sca!4v1701299999999!5m2!1ses!2sca"
+                    width="600" height="450" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+        <section class="contact-form-section">
+            <h2>Send Us a Message</h2>
+            <form action="submit_form.php" method="post" class="contact-form">
+                <label for="user_name">Name:</label>
+                <input type="text" id="user_name" name="user_name" required>
+
+                <label for="user_email">Email Address:</label>
+                <input type="email" id="user_email" name="user_email" required>
+
+                <fieldset>
+                    <legend>Message Purpose:</legend>
+                    <label><input type="radio" name="message_purpose" value="general_inquiry" checked> General
+                        Inquiry</label><br>
+                    <label><input type="radio" name="message_purpose" value="reservation_question"> Reservation
+                        Question</label><br>
+                    <label><input type="radio" name="message_purpose" value="website_suggestion"> Website
+                        Suggestion</label>
+                </fieldset>
+
+                <label for="user_message">Message:</label>
+                <textarea id="user_message" name="user_message" required></textarea>
+
+                <div class="checkbox-group">
+                    <label for="newsletter">
+                        Please subscribe me to the monthly newsletter
+                    </label>
+
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                </div>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+        <section class="employee-profiles">
+            <h2>Meet Our Team</h2>
+            <div class="team-grid">
+                <figure>
+                    <img src="https://byui-cse.github.io/wdd130-ww-course/resources/images/rafting59_600.jpg"
+                        alt="Lead Guide Elena López">
+                    <figcaption>Elena López — Lead Guide</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="https://byui-cse.github.io/wdd130-ww-course/resources/images/rafting53_600.jpg"
+                        alt="Reservations Manager Marcos Torres">
+                    <figcaption>Marcos Torres — Reservations Manager</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="https://byui-cse.github.io/wdd130-ww-course/resources/images/rafting18_600.jpg"
+                        alt="Safety Specialist Ana Ruiz">
+                    <figcaption>Ana Ruiz — Safety Specialist</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>©️ 2025 - Adventure Rapids Rafting - David Benavides</p>
+        <nav class="socialmedia">
+            <a href="https://facebook.com">
+                <img src="https://cdn3.iconfinder.com/data/icons/social-networks-34/96/social___1-128.png"
+                    alt="Facebook Icon">
+            </a>
+            <a href="https://twitter.com">
+                <img src="https://cdn4.iconfinder.com/data/icons/social-media-2070/140/_twitter-128.png"
+                    alt="Twitter Icon">
+            </a>
+            <a href="https://instagram.com">
+                <img src="https://cdn0.iconfinder.com/data/icons/social-media-2349/69/Asset_35-128.png"
+                    alt="Instagram Icon">
+            </a>
+        </nav>
+    </footer>
+</body>
+
+</html>
