@@ -26,6 +26,7 @@
         </nav>
     </header>
     <main class="contact-grid">
+        <h1>Adventure Rapids Rafting - Contact Us</h1>
         <section class="contact-info">
             <h2>Company Information</h2>
             <p><strong>Address:</strong> 555 Water St, Youngstown, NY 14174, USA</p>
@@ -53,23 +54,25 @@
 
                 <fieldset>
                     <legend>Message Purpose:</legend>
-                    <label><input type="radio" name="message_purpose" value="general_inquiry" checked> General
-                        Inquiry</label><br>
-                    <label><input type="radio" name="message_purpose" value="reservation_question"> Reservation
-                        Question</label><br>
-                    <label><input type="radio" name="message_purpose" value="website_suggestion"> Website
-                        Suggestion</label>
+                    <input type="radio" id="general_inquiry" name="message_purpose" value="general_inquiry" checked>
+                    <label for="general_inquiry">General Inquiry</label><br>
+
+                    <input type="radio" id="reservation_question" name="message_purpose" value="reservation_question">
+                    <label for="reservation_question">Reservation Question</label><br>
+
+                    <input type="radio" id="website_suggestion" name="message_purpose" value="website_suggestion">
+                    <label for="website_suggestion">Website Suggestion</label>
                 </fieldset>
 
                 <label for="user_message">Message:</label>
                 <textarea id="user_message" name="user_message" required></textarea>
 
                 <div class="checkbox-group">
+                    <input type="checkbox" id="newsletter" name="newsletter">
                     <label for="newsletter">
                         Please subscribe me to the monthly newsletter
                     </label>
 
-                    <input type="checkbox" id="newsletter" name="newsletter">
                 </div>
 
                 <button type="submit">Send Message</button>
