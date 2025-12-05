@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -12,10 +12,13 @@
 
 <body>
     <header>
-        <img src="https://byui-cse.github.io/wdd130-ww-course/resources/images/logos/z-raftingbw.png"
-            alt="Logotipo de Adventure Rapids Rafting">
-        <div id="logo">Adventure Rapids Rafting</div>
-        <nav>
+        <div id="branding">
+            <img src="https://byui-cse.github.io/wdd130-ww-course/resources/images/logos/z-raftingbw.png"
+                alt="Logotipo de Adventure Rapids Rafting">
+            <div id="logo-text">Adventure Rapids Rafting</div>
+        </div>
+
+        <nav aria-label="Main Navigation">
             <ul class="navigation">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
@@ -24,64 +27,67 @@
             </ul>
         </nav>
     </header>
-    <section id="hero" class="hero">
-        <img src="images/hero.jpg" alt="Rafting at sunset">
-        <div class="hero-content">
-            <h1>Live the Adventure of a Lifetime</h1>
-            <p>Discover rafting like never before!</p>
-            <a href="#contact" class="cta-btn">Book Your Adventure</a>
-        </div>
-    </section>
 
-    <section id="aboutus" class="adventure-section-container">
-        <div class="Adventure">
-
-            <figure>
-                <img src="images/Rivers.jpg" alt="New experiences">
-                <figcaption>Rivers</figcaption>
-            </figure>
-            <figure>
-                <img src="images/Camping.jpg" alt="Roaring waterfalls">
-                <figcaption>Camping</figcaption>
-            </figure>
-
-            <figure>
-                <img src="images/Rapids.jpg" alt="Pacific River">
-                <figcaption>Rapids</figcaption>
-            </figure>
-
-        </div>
-    </section>
-    <section class="adventure-feature-container">
-        <div class="adventure-feature">
-            <div class="feature-image">
-                <img src="images/trips.jpg" alt="River in the forest at sunset">
+    <main>
+        <section id="hero" class="hero">
+            <img src="images/hero.jpg" alt="Rafting at sunset">
+            <div class="hero-content">
+                <h1>Live the Adventure of a Lifetime</h1>
+                <p>Discover rafting like never before!</p>
+                <a href="#contact" class="cta-btn">Book Your Adventure</a>
             </div>
-            <div class="feature-text">
-                <h2>More Than Just The Thrill</h2>
-                <p>
-                    Enjoy the great Rafting scenery. From valleys, meadows, canyons, and
-                    high peaks. It's way more than just the rapids. It's a good way to get
-                    away from it all and grow stronger at the beauty of the great outdoors.
-                </p>
-                <a href="trips.html" class="join-btn">Join Us</a>
+        </section>
+
+        <section id="gallery" class="adventure-section-container">
+            <div class="Adventure">
+                <figure>
+                    <img src="images/Rivers.jpg" alt="Ríos para hacer rafting.">
+                    <figcaption>Rivers</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Camping.jpg" alt="Camping junto al río.">
+                    <figcaption>Camping</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Rapids.jpg" alt="Rápidos del Río Pacífico.">
+                    <figcaption>Rapids</figcaption>
+                </figure>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <footer>
-        <p>© 2025 - Adventure Rapids Rafting - David Benavides</p>
+        <section class="adventure-feature-container">
+            <div class="adventure-feature">
+                <div class="feature-image">
+                    <img src="images/trips.jpg" alt="Río en el bosque al atardecer.">
+                </div>
+                <div class="feature-text">
+                    <h2>More Than Just The Thrill</h2>
+                    <p>
+                        Enjoy the great Rafting scenery. From valleys, meadows, canyons, and
+                        high peaks. It's way more than just the rapids. It's a good way to get
+                        away from it all and grow stronger at the beauty of the great outdoors.
+                    </p>
+                    <a href="trips.html" class="join-btn">Join Us</a>
+                </div>
+            </div>
+        </section>
+    </main>
 
-        <nav class="socialmedia">
-            <a href="https://facebook.com">
+    <footer id="contact">
+        <p>&copy; 2025 - Adventure Rapids Rafting - David Benavides</p>
+
+        <nav class="socialmedia" aria-label="Social Media Links">
+            <a href="https://facebook.com" target="_blank">
                 <img src="https://cdn3.iconfinder.com/data/icons/social-networks-34/96/social___1-128.png"
-                    alt="Facebook">
+                    alt="Facebook Icon">
             </a>
-            <a href="https://twitter.com">
-                <img src="https://cdn4.iconfinder.com/data/icons/social-media-2070/140/_twitter-128.png" alt="Twitter">
+            <a href="https://twitter.com" target="_blank">
+                <img src="https://cdn4.iconfinder.com/data/icons/social-media-2070/140/_twitter-128.png"
+                    alt="Twitter Icon">
             </a>
-            <a href="https://instagram.com">
-                <img src="https://cdn0.iconfinder.com/data/icons/social-media-2349/69/Asset_35-128.png" alt="Instagram">
+            <a href="https://instagram.com" target="_blank">
+                <img src="https://cdn0.iconfinder.com/data/icons/social-media-2349/69/Asset_35-128.png"
+                    alt="Instagram Icon">
             </a>
         </nav>
     </footer>
