@@ -13,9 +13,11 @@
 
 <body>
     <header>
-        <img src="https://byui-cse.github.io/wdd130-ww-course/resources/images/logos/z-raftingbw.png"
-            alt="Logotipo de Adventure Rapids Rafting">
-        <p id="logo"><strong>Adventure Rapids Rafting</strong></p>
+        <div id="branding">
+            <img src="https://byui-cse.github.io/wdd130-ww-course/resources/images/logos/z-raftingbw.png"
+                alt="Logotipo de Adventure Rapids Rafting">
+            <div id="logo-text">Adventure Rapids Rafting</div>
+        </div>
         <nav>
             <ul class="navigation">
                 <li><a href="index.html">Home</a></li>
@@ -25,90 +27,93 @@
             </ul>
         </nav>
     </header>
-    <main class="contact-grid">
+    <main>
         <h1>Adventure Rapids Rafting - Contáctanos</h1>
-        <section class="contact-info">
-            <h2>Información de la Compañía</h2>
-            <p><strong>Dirección:</strong> 555 Water St, Youngstown, NY 14174, USA</p>
-            <p><strong>Teléfono:</strong> +17162464778 | +17451525824</p>
-            <p><strong>Email:</strong> <a href="mailto:reserv@adventurerapids.com">reserv@adventurerapids.com</a>
-            </p>
+        <div class="contact-grid">
+            <section class="contact-info">
+                <h2>Información de la Compañía</h2>
+                <p><strong>Dirección:</strong> 555 Water St, Youngstown, NY 14174, USA</p>
+                <p><strong>Teléfono:</strong> +17162464778 | +17451525824</p>
+                <p><strong>Email:</strong> <a href="mailto:reserv@adventurerapids.com">reserv@adventurerapids.com</a>
+                </p>
 
-            <h3>Encuéntranos</h3>
-            <div class="map-container">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15725.109315024227!2d-79.052061!3d43.197945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d363d59e31d591%3A0xc6c34b6e5e8e8a7!2s555%20Water%20St%2C%20Youngstown%2C%20NY%2014174%2C%20USA!5e0!3m2!1sen!2sec!4v1701726000000!5m2!1sen!2sec"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-            </div>
-        </section>
-        <section class="contact-form-section">
-            <h2>Envíanos un Mensaje</h2>
-            <form action="submit_form.php" method="post" class="contact-form">
-                <label for="user_name">Nombre:</label>
-                <input type="text" id="user_name" name="user_name" required>
-
-                <label for="user_email">Correo Electrónico:</label>
-                <input type="email" id="user_email" name="user_email" required>
-
-                <fieldset>
-                    <legend>Propósito del Mensaje:</legend>
-                    <input type="radio" id="general_inquiry" name="message_purpose" value="general_inquiry" checked>
-                    <label for="general_inquiry">Consulta General</label><br>
-
-                    <input type="radio" id="reservation_question" name="message_purpose" value="reservation_question">
-                    <label for="reservation_question">Pregunta sobre Reserva</label><br>
-
-                    <input type="radio" id="website_suggestion" name="message_purpose" value="website_suggestion">
-                    <label for="website_suggestion">Sugerencia para el Sitio Web</label>
-                </fieldset>
-
-                <label for="user_message">Mensaje:</label>
-                <textarea id="user_message" name="user_message" rows="5" required></textarea>
-                <div class="checkbox-group">
-                    <input type="checkbox" id="newsletter" name="newsletter">
-                    <label for="newsletter">
-                        Por favor, suscríbeme al boletín mensual
-                    </label>
+                <h3>Encuéntranos</h3>
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1000!2d-78.1092!3d43.1979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDPCsDE5JzQ0LjQiTiA3OMKwMDYnMzMuMSJX!5e0!3m2!1sen!2sus!4v1677271810022"
+                        width="600" height="450" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
                 </div>
+            </section>
+            <section class="contact-form-section">
+                <h2>Envíanos un Mensaje</h2>
+                <form action="submit_form.php" method="post" class="contact-form">
+                    <label for="user_name">Nombre:</label>
+                    <input type="text" id="user_name" name="user_name" required>
 
-                <button type="submit">Enviar Mensaje</button>
-            </form>
-        </section>
-        <section class="employee-profiles">
-            <h2>Conoce a Nuestro Equipo</h2>
-            <div class="team-grid">
-                <figure>
-                    <img src="images/elena.jpg" alt="Guía Principal Elena López">
-                    <figcaption>Elena López — Guía Principal</figcaption>
-                </figure>
+                    <label for="user_email">Correo Electrónico:</label>
+                    <input type="email" id="user_email" name="user_email" required>
 
-                <figure>
-                    <img src="images/marcos.jpg" alt="Gerente de Reservas Marcos Torres">
-                    <figcaption>Marcos Torres — Gerente de Reservas</figcaption>
-                </figure>
+                    <fieldset>
+                        <legend>Propósito del Mensaje:</legend>
+                        <input type="radio" id="general_inquiry" name="message_purpose" value="general_inquiry" checked>
+                        <label for="general_inquiry">Consulta General</label><br>
 
-                <figure>
-                    <img src="images/ana.jpg" alt="Especialista en Seguridad Ana Ruiz">
-                    <figcaption>Ana Ruiz — Especialista en Seguridad</figcaption>
-                </figure>
-            </div>
-        </section>
+                        <input type="radio" id="reservation_question" name="message_purpose"
+                            value="reservation_question">
+                        <label for="reservation_question">Pregunta sobre Reserva</label><br>
+
+                        <input type="radio" id="website_suggestion" name="message_purpose" value="website_suggestion">
+                        <label for="website_suggestion">Sugerencia para el Sitio Web</label>
+                    </fieldset>
+
+                    <label for="user_message">Mensaje:</label>
+                    <textarea id="user_message" name="user_message" rows="5" required></textarea>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        <label for="newsletter">
+                            Por favor, suscríbeme al boletín mensual
+                        </label>
+                    </div>
+
+                    <button type="submit">Enviar Mensaje</button>
+                </form>
+            </section>
+            <section class="employee-profiles">
+                <h2>Conoce a Nuestro Equipo</h2>
+                <div class="team-grid">
+                    <figure>
+                        <img src="images/elena.jpg" alt="Guía Principal Elena López">
+                        <figcaption>Elena López — Guía Principal</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="images/marcos.jpg" alt="Gerente de Reservas Marcos Torres">
+                        <figcaption>Marcos Torres — Gerente de Reservas</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="images/ana.jpg" alt="Especialista en Seguridad Ana Ruiz">
+                        <figcaption>Ana Ruiz — Especialista en Seguridad</figcaption>
+                    </figure>
+                </div>
+            </section>
+        </div>
     </main>
 
     <footer>
-        <p>&copy; 2025 - Adventure Rapids Rafting - David Benavides</p>
+        <p>© 2025 - Adventure Rapids Rafting - David Benavides</p>
         <nav class="socialmedia">
-            <a href="https://facebook.com">
+            <a href="https://facebook.com" target="_blank">
                 <img src="https://cdn3.iconfinder.com/data/icons/social-networks-34/96/social___1-128.png"
                     alt="Icono de Facebook">
             </a>
-            <a href="https://twitter.com">
+            <a href="https://twitter.com" target="_blank">
                 <img src="https://cdn4.iconfinder.com/data/icons/social-media-2070/140/_twitter-128.png"
                     alt="Icono de Twitter">
             </a>
-            <a href="https://instagram.com">
+            <a href="https://instagram.com" target="_blank">
                 <img src="https://cdn0.iconfinder.com/data/icons/social-media-2349/69/Asset_35-128.png"
                     alt="Icono de Instagram">
             </a>
